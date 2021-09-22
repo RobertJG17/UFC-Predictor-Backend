@@ -1,12 +1,11 @@
 from kaggle.api.kaggle_api_extended import KaggleApi
 from os.path import join, dirname
-from dotenv import load_dotenv
+from dotenv import load_dotenv, find_dotenv
 import os
 
 
 def download_data():
-    dotenv_path = join(dirname(__file__), '.env')
-    load_dotenv(dotenv_path)
+    load_dotenv(find_dotenv())
     api_client = {
         "username": os.environ.get('KAGGLE_USERNAME'),
         "key": os.environ.get('KAGGLE_KEY')

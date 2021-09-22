@@ -18,8 +18,8 @@ def predictions():
 if __name__ == '__main__':
     download_data()
 
-    model = joblib.load('../Model and Scaler/final_svc.pkl')
-    scaler = joblib.load('../Model and Scaler/final_scaler.pkl')
-    cols = joblib.load('../Model and Scaler/cols.pkl')
+    model = joblib.load('Model and Scaler/final_svc.pkl')
+    scaler = joblib.load('Model and Scaler/final_scaler.pkl')
+    cols = joblib.load('Model and Scaler/cols.pkl')
 
     app.run()

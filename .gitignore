@@ -3,4 +3,5 @@
 \lib
 \.idea
 *.pyc
+.DS_Store
 pyvenv.cfg

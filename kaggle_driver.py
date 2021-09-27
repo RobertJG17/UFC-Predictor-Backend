@@ -14,7 +14,9 @@ def download_data():
     api = KaggleApi(api_client=api_client)
     api.authenticate()
 
-    api.dataset_download_file(
-        'mdabbert/ultimate-ufc-dataset',
-        file_name='upcoming-event.csv',
-    )
+    for file in ['most-recent-event.csv', 'upcoming-event.csv']:
+        api.dataset_download_file(
+            'mdabbert/ultimate-ufc-dataset',
+            file_name=file,
+            path='csv-files'
+        )

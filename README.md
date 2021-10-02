@@ -1,10 +1,10 @@
-# UFC Predictor Backend
+# UFC Predictor Backend 🥊 
 
 This repository was created to act as a live backend for the model I evaluated and trained through various jupyter notebooks. I built this using Flask as an intermediary to serve JSON structured predictions for upcoming events. Since this current implementation depends on the availability of data via Kaggle, I implemented a minimum number of non NaN entries that must be satisfied in order to begin showing predictions for the next card. If this minimum is not satisfied, then the information returned from the endpoint will be the predictions from the previous event.
 
 [Live Endpoint](https://bout-predictor.herokuapp.com/)
 
-## Implementation for Python Kaggle Wrapper
+## Implementation for Python Kaggle Wrapper 🍬 
 
 ```
 from kaggle.api.kaggle_api_extended import KaggleApi
@@ -32,7 +32,7 @@ def download_data():
 
 ```
 
-## Example Predictions from UFC 267
+## Example Predictions from UFC 267 🥋 
 
 ```
 [
